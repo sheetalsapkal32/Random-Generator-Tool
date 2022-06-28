@@ -1,0 +1,20 @@
+
+#import the necessary modules!
+import random
+import string
+
+print('Random Number Generator Tool')
+
+length = int(input('\nEnter Lenght of number: '))                      
+
+#define data
+lower = string.digits
+upper = string.digits
+num = string.digits
+symbols = string.punctuation
+
+#use random 
+temp = random.sample(all,length)
+ran_num = "".join(temp)
+
+print(ran_num)
